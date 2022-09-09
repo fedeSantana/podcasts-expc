@@ -27,8 +27,8 @@ function podcastsExpC_init() {
     if(getenv('WP_ENV')=="development") {
         $path = "/frontend/dist/assets";
     }
-    wp_register_script("podcastsExpC_js", plugins_url($path."/index.js", __FILE__), array(), "1.0", false);
-    wp_register_style("podcastsExpC_css", plugins_url($path."/index.css", __FILE__), array(), "1.0", "all");
+    wp_register_script("podcastsExpC_js", plugins_url($path."/index_podcasts.js", __FILE__), array(), "1.0", false);
+    wp_register_style("podcastsExpC_css", plugins_url($path."/index_podcasts.css", __FILE__), array(), "1.0", "all");
 }
 
 add_action( 'init', 'podcastsExpC_init' );
