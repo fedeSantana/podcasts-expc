@@ -1,0 +1,54 @@
+.ilo-iconButton {
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  padding: 12px;
+  background: none;
+  width: 50px;
+  height: 50px;
+  fill: $foreground-neutralPrimary;
+  transition: fill 0.2s;
+  transition: border 0.3s;
+
+  @include modifier(brand) {
+    &:hover {
+      background: rgba($primary-band, 0.12);
+      border-radius: 100px;
+      fill: $primary-band;
+    }
+    &:focus {
+      border: 2px solid $primary-band;
+      border-radius: 100%;
+      background: rgba($primary-band, 0.12);
+      border-radius: 100px;
+      fill: $primary-band;
+    }
+  }
+
+  @include modifier(l) {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+  }
+
+  @include modifier(m) {
+    width: 38px;
+    height: 38px;
+    padding: 5.4px;
+    font-size: 24px;
+  }
+
+  @include modifier(s) {
+    width: 34px;
+    height: 34px;
+    padding: 6px;
+    font-size: 16px;
+  }
+}
+
+.ilo-iconButton__icon {
+  fill: inherit;
+  path {
+    fill: inherit;
+  }
+}

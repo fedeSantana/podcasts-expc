@@ -1,0 +1,106 @@
+.ilo-player {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  padding: 12px 12px;
+  background-color: #000000;
+}
+
+.ilo-player__main {
+  display: grid;
+  grid-template-columns: 1fr 208px 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 32px;
+  margin-top: 16px;
+  grid-template-areas: "ilo-player__details ilo-player__actions ilo-player__volume";
+}
+
+.ilo-player__details {
+  grid-area: ilo-player__details;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0;
+}
+
+.ilo-player__artworkContainer {
+  flex-shrink: 0;
+}
+
+.ilo-player__artwork {
+  box-sizing: content-box;
+  width: 50px;
+  height: 50px;
+  padding: 0 6px;
+  border-radius: 5px;
+}
+
+.ilo-player__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  margin-left: 12px;
+}
+
+.ilo-player__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+  color: #202124;
+  margin: 0 0 8px 0;
+  padding: 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+}
+
+.ilo-player__restTime {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  /* identical to box height, or 12px */
+  color: #3c4043;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.podcastArtworkInformation {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+}
+
+.ilo-player__actions {
+  grid-area: ilo-player__actions;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ilo-player__volume {
+  grid-area: ilo-player__volume;
+}
+
+.ilo-player__slider {
+  position: absolute;
+  width: 100%;
+  margin-top:-12px;
+
+}
+
+.MuiSlider-rail {
+  box-shadow: 0 -6px 10px 0 rgba(0,0,0,0.14),0 1px 18px 0 rgba(0,0,0,0.12),0 3px -5px -1px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,73 @@
+/* ilo - podcast card*/
+.podcastCard {
+  margin: 16px auto;
+  display: flex;
+  max-width: 738px;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.podcastCard__artworkContainer {
+  margin-right: 16px;
+  border-radius: 12px;
+  align-self: center;
+  display: inline-block;
+  flex-shrink: 0;
+  svg {
+    border-radius: inherit;
+  }
+
+  img {
+    border-radius: inherit;
+  }
+}
+
+.podcastCard__artwork {
+  width: 136px;
+}
+
+.podcastCard__date {
+  height: 0.875rem;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 100%;
+  margin-bottom: 8px;
+
+  /* identical to box height, or 16px */
+  color: $foreground-neutralTertiary;
+}
+
+.podcastCard__title {
+  left: 0px;
+  margin-bottom: 8px;
+  line-height: 1;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: $foreground-neutralPrimary;
+}
+
+.podcastCard__description {
+  left: 0px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: normal;
+  margin-bottom: 8px;
+  overflow: hidden;
+  max-height: 48px;
+  //height: 48px;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+
+  /* or 16px */
+
+  /* Foreground / neutralSecundary • gray130 */
+  color: #595963;
+}

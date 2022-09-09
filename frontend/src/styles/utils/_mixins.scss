@@ -1,0 +1,16 @@
+/* Multiple Modifier */
+@mixin modifier($modifier) {
+  $len: str-length(#{&}); /* Get parent string length */
+  $parent: str-slice(#{&}, 2, $len); /* Remove leading */
+
+  @at-root [class^="#{$parent}"][class*="--#{$modifier}"] {
+    @extend .#{$parent};
+    @content;
+  }
+}
+
+@mixin hover-button {
+  background: rgba($primary-band, 0.12);
+  border-radius: 100px;
+  fill: $primary-band;
+}

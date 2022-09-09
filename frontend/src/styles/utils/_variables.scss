@@ -1,0 +1,18 @@
+/* COLOR | FOREGROUND */
+$foreground-black: #000000;
+$foreground-variations-black12: rgba($foreground-black, 0.12);
+$foreground-neutralPrimary: #2f3031;
+$foreground-neutralTertiary: #9b9ca3;
+
+/* COLOR | BACKGROUND */
+$background-white: #ffffff;
+$background-variations-white12: rgba($background-white, 0.12);
+
+/* COLOR | PRIMARY */
+$primary-band: #0078d4;
+$primary-variations-4: rgba($primary-band, 0.04);
+$primary-variations-12: rgba($primary-band, 0.08);
+
+/* RIPPLE COLOR */
+$ripple-color: rgba(41, 75, 163, 0.1);
+$ripple-color-contained: rgba(255, 255, 255, 0.5);

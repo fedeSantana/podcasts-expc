@@ -1,0 +1,105 @@
+/* Player */
+
+main {
+  flex: 1 0 auto;
+}
+
+.ilo-player {
+  display: block;
+  padding: 0 0px 12px 0;
+  background-color:#f8f9fa;
+}
+
+
+
+.ilo-player__main {
+  display: grid;
+  padding: 0px 12px;
+  grid-template-columns: 1fr 208px 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 32px;
+  grid-template-areas: "ilo-player__details ilo-player__actions ilo-player__volume";
+  background-color:#f8f9fa;
+}
+
+.ilo-player__details {
+  grid-area: ilo-player__details;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0;
+}
+
+.ilo-player__artworkContainer {
+  flex-shrink: 0;
+}
+
+.ilo-player__artwork {
+  box-sizing: content-box;
+  width: 50px;
+  height: 50px;
+  padding: 0 6px;
+  border-radius: 5px;
+}
+
+.ilo-player__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  margin-left: 12px;
+}
+
+.ilo-player__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+  color: #202124;
+  margin: 0 0 8px 0;
+  padding: 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+}
+
+.ilo-player__restTime {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  /* identical to box height, or 12px */
+  color: #3c4043;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.podcastArtworkInformation {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+}
+
+.ilo-player__actions {
+  grid-area: ilo-player__actions;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.ilo-player__volume {
+  grid-area: ilo-player__volume;
+}
+
+//TODO: El !important hay que volarlo. Pesima idea.
+.MuiSlider-root { 
+  padding: 12px 0 12px 0 !important;
+  //TODO: background-gradient with 25px, transparent to the top. Or shadow I dont know.
+  background-color: transparent;
+}
